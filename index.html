@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<!--
+    Name: Dante Suarez
+    Date: 10/24/2022
+    Class: GUI Programming 1
+    Assignment: HW3 - Creating an Interactive Dynamic Table
+    Document: index.html
+-->
+
+<html lang="en">
+<head>
+    <title>Table Generator</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <h1>Dante's Multiplication Table Generator</h1>
+
+    <div class="container">
+ 
+        <div class="row">
+            <!--Form for input-->
+            <form id="form" class=" col-md-10 col-lg-10 col-sm-10 form-group" action="">
+
+                <h5>Enter numbers between -50 and 50</h5>
+
+                <!--Error message box div-->
+                <div class= "hide" id="message"></div>
+
+                <!--Menu-->
+                <label class="form-group" for="low_col">Low Column:</label>
+                <input class="form-group" type="text" id="low_col" name="low_col"><br>
+
+                <label class="form-group"for="high_col">High Column:</label>
+                <input class="form-group"type="text" id="high_col" name="high_col" ><br>
+
+                <label class="form-group"for="low_row">Low Row:</label>
+                <input class="form-group"type="text" id="low_row" name="low_row"><br>
+
+                <label class="form-group"for="high_row">High Row:</label>
+                <input class="form-group"type="text" id="high_row" name="high_row"><br>
+
+                <!--submit button-->
+                <button class="form-group"type="button" onclick="generate_table()" href="index.html" >Submit</button>
+
+            
+            </form> 
+
+            <!--Here is where the multiplication table will appear-->
+            <div class="col-sm-10 col-md-10 col-lg-10" id="multiplication_table"></div>
+
+        </div>
+    </div>
+    
+    <script src="js/generator.js"></script>
+  
+
+
+</body>
+</html>
+
