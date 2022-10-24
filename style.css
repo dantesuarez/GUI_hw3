@@ -1,0 +1,91 @@
+/*
+    Name: Dante Suarez
+    Date: 10/24/2022
+    Class: GUI Programming 1
+    Assignment: HW3 - Creating an Interactive Dynamic Table
+    Document: style.css
+*/
+
+/* Overall settings for entire document unless specified otherwise*/
+body {
+    background-color: black;
+    color: #41b32a;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+h1 {
+    margin: 20px;
+    text-align: center;
+    font-size: 28px;
+    color: #41b32a;
+}
+
+/* Make the form fit the content and add a border around it */
+form {
+    padding: 15px;
+    height: fit-content;
+    box-sizing: border-box;
+    border: 2px solid #41b32a;
+    text-align: center;
+}
+
+input[type=text] {
+    padding: 5px;
+    margin: 10px;
+    width: 30%;
+}
+
+.hide{
+    display: none;
+}
+
+/*Position the error message box inside of the form*/
+#message{
+    height: fit-content;
+    font-size: 16px;
+    padding: 10px;
+    margin: 20px;
+    min-width: 400px;
+    text-align: center;
+    font-size: 13px;
+    border: 2px solid #41b32a;
+}
+
+
+button {
+    text-align: center;
+    background-color: black;
+    color: #41b32a;
+    padding: 8px;
+    margin: 10px;
+    width: 30%;
+}
+
+h5{
+    margin: 10px;
+}
+
+table th, td{
+    padding: 4px;
+    border: 2px solid #41b32a;
+    font-size: 13px;
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+table th{
+    background-color: black;
+}
+
+table tr:nth-child(odd) td:nth-child(odd), table tr:nth-child(even) td:nth-child(even){
+    background-color: #41b32a;
+    color: black;   
+}
+
+#multiplication_table{
+    padding: 10px;
+    margin: 10px;
+    overflow: auto;
+    max-height: 600px;
+    max-width: 80%;
+}
